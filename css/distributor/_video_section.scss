@@ -1,0 +1,11 @@
+.video_section{
+    width: 100%; height: 100%;
+    position: absolute; 
+    iframe{
+        width: 500px; height: 400px;
+        transition: all .5s ease-in-out;
+    }
+    .active_video{
+        left: 0;
+    }
+}

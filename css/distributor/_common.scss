@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Oswald:wght@200;300;400;500;600;700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+// font-family: 'Italiana', serif;
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Work Sans', sans-serif;
+*{
+    box-sizing: border-box; margin: 0; padding: 0;
+}
+
+:root{
+    --primary-color: #c38049;
+    --secondary-color:#7f7f7f;
+    --white-color: #f9f9fb;
+    --white-heading-color: #f9f9fb;
+    --heading-color: #191919;
+    --dark-color: #000;
+    --heading-font: 'Italiana', serif;
+    --description-font: 'Work Sans', sans-serif;
+    --button-font: 'Oswald', sans-serif; 
+}
+
+body{
+    font-family:var(--description-font); 
+    font-size: 15px; 
+    color: var(--secondary-color); 
+    line-height: 30px; 
+    font-weight: normal;
+}
+
+h2, h3, h4, h5, h6{
+    line-height: 32px;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    font-size: 21px;
+}
+
+h1{
+    font-size: 54px;
+    
+}
+h2{
+    font-size: 54px;
+}
+
+
+
+ul, li{
+    list-style: none; margin: 0; padding: 0;
+}
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+a:hover{
+    text-decoration: none;
+}
+
+.pt{
+    padding-top: 102px;
+}
+.pb{
+    padding-bottom: 102px;
+}
+
+.container{
+    max-width: 1608px;
+    width: 100%;
+}
+
+
+.custom_button{
+    margin: 0;  position: relative; z-index: 1; width: 250px;
+    &.white_button{
+        width: 279px;
+        a{
+            
+            width: 100%;
+            height: 59px;
+            border-color: var(--white-color);
+            color: var(--white-color);
+            &::before, &::after{
+                background-color: var(--white-color); 
+            }
+        }
+        .sub_back{
+            height: 59px;
+            &::before, &::after{
+                background-color: var(--white-color); 
+            }
+        }
+    }
+    .sub_back{
+        width: 100%;
+        height: 50px;
+        position: relative;
+        &::before, &::after{
+            width: 1px;
+            height: 19px;
+            background-color: var(--primary-color);
+            position: absolute;
+            content: "";
+        }
+        &::before{
+            top: 0;
+            left: 0;
+        }
+        &::after{
+            bottom: 0;
+            left: 0;
+        }
+    }
+    a{
+        width: 100%;
+        height: 50px;
+        background-color: transparent;
+        color: var(--primary-color);
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: normal;
+        position: relative;
+        border-top: var(--primary-color) 1px solid;
+        border-bottom: var(--primary-color) 1px solid;
+        font-family: var(--button-font);
+        letter-spacing: 1px;
+        
+        &::before, &::after{
+            width: 1px;
+            height: 19px;
+            background-color: var(--primary-color);
+            position: absolute;
+            content: "";
+        }
+        &::before{
+            top: 0;
+            right: 0;
+        }
+        &::after{
+            right: 0;
+            bottom: 0;
+        }
+    }
+  
+}
+
+
+.custom_heading{
+    &.text_left{
+        h2{
+           
+            &::before, &::after{
+                right: auto;
+            } 
+        }
+    }
+    h2{
+        
+        margin-bottom: 90px;
+        padding-bottom: 30px;
+        position: relative;
+        line-height: 58px;
+        &:before{
+            position: absolute;
+            border-bottom: 4px solid #c38049;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            width: 173px;            
+            content: '';
+        }
+    }
+}
+
+@media only screen and (max-width:1500px){
+    .container{
+        max-width: 1280px;
+    }
+    .custom_heading{
+        h2{
+            font-size: 50px;
+        }
+    }
+}
+@media only screen and (max-width:1200px){
+    .pt{
+        padding-top: 80px;
+    }
+    .pb{
+        padding-bottom: 80px;
+    }
+}
+@media only screen and (max-width:1024px){
+    .container{
+        max-width: 900px
+    }
+}
+
+
+@media only screen and (max-width:1024px){
+    .pt{
+        padding-top: 40px;
+    }
+    .pb{
+        padding-bottom: 40px;
+    }
+    .container{
+        max-width: 900px
+    }
+}
+
+
+@media only screen and (max-width:991px){
+    .container{
+        max-width: 100%;
+    }
+    .custom_heading{
+        h2{
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 45px;
+            padding-bottom: 15px;
+        }
+    }
+    .pt{
+        padding-top: 24px;
+    }
+    .pb{
+        padding-bottom: 24px;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .custom_heading{
+        h2{
+            font-size: 24px;
+        }
+    }
+}
+
+
+
+
+

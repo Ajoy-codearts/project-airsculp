@@ -1,0 +1,254 @@
+.benifit{
+    background-image: url(../../images/b-bg6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 11px 0 68px 0;
+    .benifit-wraper{
+        p{
+            text-align: center;
+            line-height: 32px;
+        }
+        .custom-card-wraper{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-gap: 21px;
+            padding: 40px 0;
+            a{
+                &:hover{
+                    color: var(--primary-color) !important;
+                }
+                .custom-card{
+                    height: auto;
+                    text-align: center;
+                    padding: 47px 24px;
+                    border: none;
+                    box-shadow: 0px 0px 12px -1px; background-color: #fff;
+                    position: relative;
+                    &:before{
+                        position: absolute;
+                        content: '';
+                        top: 0;
+                        right: 0;
+                        width: 24px;
+                        height: 27px;
+                        background-color: var(--primary-color);
+                        clip-path: polygon(0 0, 100% 100%, 100% 0);
+                    }
+                    .custom-card-img{
+                        height: 71px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    h3{
+                        font-size: 18px;
+                        font-weight: 600;
+                        padding: 30px 0;
+                    }
+                    p{
+                        font-size: 13px;
+                        line-height: 20px;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1600px){
+    .benifit{
+        .benifit-wraper{
+            .custom-card-wraper{
+                a{
+                    .custom-card{
+                        h3{
+                            font-size: 15px;
+                            padding: 21px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:1500px){
+    .benifit{
+        .benifit-wraper{
+            .custom-card-wraper{
+                a{
+                    .custom-card{
+                        padding: 13px 10px;
+                        img{
+                            width: 54px;
+                        }
+                        h3{
+                            font-size: 13px;
+                            padding: 6px 0;
+                        }
+                        p{
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:1279px){
+    .benifit{
+        .benifit-wraper{
+            .custom-card-wraper{
+                a{
+                    .custom-card{
+                        h3{
+                            font-size: 19px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:1024px){
+    .benifit{
+        .benifit-wraper{
+            .custom-card-wraper{
+                grid-template-columns: repeat(3,1fr);
+                a{
+                    .custom-card{
+                        padding: 22px 27px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:991px){
+    .benifit{
+        .benifit-wraper{
+            .custom-card-wraper{
+                a{
+                    .custom-card{
+                        h3{
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:500px){
+    .benifit{
+        .benifit-wraper{
+            .custom-card-wraper{
+                grid-template-columns: repeat(2,1fr);
+                a{
+                    .custom-card{
+                        padding: 22px 27px;
+                        h3{
+                            font-size: 15px;
+                        }
+                        p{
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:486px){
+    .benifit{
+        .benifit-wraper{
+            .custom-card-wraper{
+                grid-template-columns: repeat(2,1fr);
+                a{
+                    .custom-card{
+                        padding: 22px 27px;
+                        h3{
+                            font-size: 15px;
+                        }
+                        p{
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:450px){
+    .benifit{
+        .benifit-wraper{
+            .custom-card-wraper{
+                grid-template-columns: repeat(1,1fr);
+                padding: 0 20px;
+                a{
+                    .custom-card{
+                        h3{
+                            font-size: 19px;
+                        }
+                        p{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// @media only screen and (max-width:1400px){
+//     .benifit{
+//         .benifit-wraper{
+//             .custom-card-wraper{
+//                 a{
+//                     .custom-card{
+//                         h3{
+//                             font-size: 14px;
+//                             padding: 10px 0;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+// @media only screen and (max-width:1200px){
+//     .benifit{
+//         .benifit-wraper{
+//             .custom-card-wraper{
+//                 grid-template-columns: repeat(3,1fr);
+//                 a{
+//                     .custom-card{
+//                         padding: 0 45px;
+                        
+//                         h3{
+//                             padding: 19px 0;
+//                             font-size: 17px;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+// @media only screen and (max-width:767px){
+//     .benifit{
+//         .benifit-wraper{
+//             .custom-card-wraper{
+//                 grid-template-columns: repeat(2,1fr);
+//             }
+//         }
+//     }
+// }
+// @media only screen and (max-width:500px){
+//     .benifit{
+//         .benifit-wraper{
+//             .custom-card-wraper{
+//                 grid-template-columns: repeat(1,1fr);
+//             }
+//         }
+//     }
+// }

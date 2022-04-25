@@ -1,0 +1,149 @@
+.benifits-banner{
+    position: sticky; top: 0;
+    img{
+        
+        &.avator{
+            width: 100%;
+        }
+    }
+    .benifits-banner-content{
+        width: 35%;
+        position: absolute;
+        bottom: 174px;
+        right: 64px;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 55px;height: 60px;
+            padding-bottom: 12px;
+        }
+        p#sub_heading{
+            padding: 18px 0;
+            text-transform: uppercase; font-family: var(--button-font);
+            position: relative; color: var(--primary-color);
+            &:before{
+                position: absolute;
+                content: '';
+                bottom: 0;
+                width: 60px;
+                border-bottom: 2px solid var(--primary-color);
+            }
+        }
+        h2{
+            color: #fff; font-size: 60px;
+            padding: 22px 0;
+        }
+        p{
+            color: #fff; font-size: 17px; font-weight: 300;
+        }
+    }
+}
+
+.benifits-banner:nth-child(2){
+    .benifits-banner-content{
+        left: 64px;
+    }
+}
+.benifits-banner:nth-child(3){
+    .benifits-banner-content{
+        left: 64px;
+    }
+}
+.benifits-banner:nth-child(5){
+    .benifits-banner-content{
+        left: 64px;
+    }
+}
+
+
+@media only screen and (max-width:1366px){
+    .benifits-banner{
+        .benifits-banner-content{
+            bottom: 42px; width: 46%;
+            h2{
+                font-size: 55px;
+                line-height: 50px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:1030px){
+    .benifits-banner{
+        .benifits-banner-content{
+            width: 84%;
+        }
+    }
+} 
+@media only screen and (max-width:991px){
+    .benifits-banner{
+        .benifits-banner-content{
+            img{
+                height: 54px; padding: 0;
+            }
+            h2{
+                font-size: 36px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+} 
+
+@media only screen and (max-width:767px){
+    .benifits-banner{
+         padding: 50px 30px;
+        &::before{
+            position: absolute;
+            content: '';
+            width: 100%; height: 100%;
+            top: 0; left: 0;
+            z-index: 9; background-color: rgba(0,0,0,0.5);
+        }
+        .avator{
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .benifits-banner-content{
+            position: relative;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            z-index: 10;
+            width: 100%; right: 0; top: 0; bottom: 0; margin: auto;
+            a{
+                &:before{
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                }
+            }
+            h2{
+                font-size: 27px;
+            }
+        }
+    }
+    .benifits-banner:nth-child(2){
+        .benifits-banner-content{
+            left: 0;
+        }
+    }
+    .benifits-banner:nth-child(3){
+        .benifits-banner-content{
+            left: 0;
+        }
+    }
+    .benifits-banner:nth-child(5){
+        .benifits-banner-content{
+            left: 0;
+        }
+    }
+} 
+

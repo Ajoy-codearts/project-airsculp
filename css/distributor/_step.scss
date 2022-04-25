@@ -1,0 +1,87 @@
+.step_back{
+    width: 100%;
+    height: auto;
+    background-image: url(../../images/step_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .main_details{
+        width: 100%;
+        margin-bottom: 35px;
+        a{ 
+            color: var(--secondary-color);
+            box-shadow: rgba(208,208,208,.75) 0 0 7px;
+            &:hover{
+                color: var(--secondary-color);
+            }
+            .portion{
+                width: 100%;
+                background-color: #ffffff;
+                padding: 8px;
+                box-shadow: rgba(208,208,208,.75) 0 0 7px;
+                min-height: 462px;
+                margin-bottom: 35px;
+                position: relative;
+                span{
+                    width: 42px;
+                    height: 42px;
+                    background-color: var(--primary-color);
+                    color: var(--white-color);
+                    font-family: var(--button-font);
+                    font-size: 11px;
+                    text-align: center;
+                    position: absolute;
+                    top: 30px;
+                    left: 25px;
+                    z-index: 9;
+                    border-radius: 100%;
+                    text-transform: uppercase;
+                    line-height: 17px;
+                }
+                img{
+                    width: 100%;
+                    height: 253px;
+                    object-fit: cover;
+                }
+                .content_area{
+                    width: 100%;
+                    padding-top: 30px;
+                    padding-left: 16px;
+                    padding-bottom: 10px;
+                    h3{
+                        margin-bottom: 15px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+    .button_back{
+        .custom_button{
+            margin-right: 30px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .step_back{
+        .main_details{
+            .portion{
+                text-align: center;
+            }
+        }
+        .button_back{
+            flex-wrap: wrap;
+            .custom_button{
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 15px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

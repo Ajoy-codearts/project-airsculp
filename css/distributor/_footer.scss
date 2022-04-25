@@ -1,0 +1,113 @@
+footer{
+    .top{
+        width: 100%;
+        background-color: var(--primary-color);
+        padding: 70px 0;
+        h2{
+            font-size: 44px;
+            color: var(--white-color);
+            margin-right: 217px;
+        }
+    }
+    .main_section{
+        width: 100%;
+        background-color: var(--dark-color);
+        padding-top: 87px;
+        padding-bottom: 58px;
+        .portion{
+            width: 100%;
+            .logo{
+                img{
+                    margin-bottom: 32px;
+                }
+            }
+            p{
+                color: var(--white-color);
+                color: #b3b3b3;
+                font-weight: 300;
+                margin-bottom: 46px;
+            }
+            h3{
+                font-size: 25px;
+                color: #fff;
+                margin-bottom: 35px;
+            }
+            // .social{
+            //     margin-top: ;
+            // }
+            .custom_button{
+                width: 126px;
+            }
+        }
+        .txt{
+            padding-bottom: 5px;
+        }
+    }
+    .bottom_section{
+        background-color: #191919; padding: 35px 0;
+        margin-top: -1px;
+        p{
+            color: #fff; text-align: center;
+           font-size: 16px;
+        }
+    }
+}
+
+@media only screen and (max-width:1500px){
+    footer{
+        .top{
+           h2{
+            margin-right: 5%;
+           }
+        }
+    }
+}
+
+@media only screen and (max-width:1279px){
+    footer{
+        .top{
+           h2{
+                margin-right: 5%;
+                font-size: 30px;
+           }
+        }
+    }
+}
+
+@media only screen and (max-width:991px){
+    footer{
+        .top{
+            flex-direction: column;
+            justify-content: center;
+           h2{
+                margin-right: 0;
+                font-size: 30px;
+                margin-bottom: 20px;
+           }
+        }
+        .txt{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width:767px){
+    .portion{
+        padding-bottom: 40px !important;
+    }
+}
+
+@media only screen and (max-width:500px){
+    footer{
+        .top{            
+           h2{               
+                font-size: 20px;
+                text-align: center;               
+           }
+        }
+    }
+}
